@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box {
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-top: 40vh;
+            height: 100px;
+            width: 600px;
+            border-radius: 100px;
+            display: flex;
+            position: relative;
+            animation: rotate 5s linear infinite;
+        }
+
+        .earth {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border-radius: 50%;
+            position: fixed;
+            margin-top: 50px;
+            margin-left: 300px;
+            transform: translate(-50%, -50%); 
+            align-self: flex-start;
+        }
+        .moon {
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            border: 3px solid white;
+            border-radius: 50%;
+            position: fixed;
+            align-self: center;box-shadow: 0px 0px 20px white;
+        }
+
+        @keyframes rotate{
+            from{
+               transform: rotate(0deg); 
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="earth">
+        
+    </div>
+    <div class="moon"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* responsive max width */
+}
+
+.card-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.role {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #6c63ff;
+  transform: scale(1.2);
+}
+
+/* 🔹 Responsive adjustments */
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .card-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .desc {
+    font-size: 0.85rem;
+  }
+
+  .social a {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+}
