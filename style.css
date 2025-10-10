@@ -21,7 +21,7 @@ body {
   padding: 2rem;
   text-align: center;
   width: 100%;
-  max-width: 350px; /* responsive max width */
+  max-width: 350px; 
 }
 
 .card-image img {
@@ -67,7 +67,6 @@ body {
   transform: scale(1.2);
 }
 
-/* 🔹 Responsive adjustments */
 @media (max-width: 480px) {
   .card {
     padding: 1.5rem;
@@ -91,4 +90,5 @@ body {
     font-size: 1rem;
     margin: 0 6px;
   }
+
 }
